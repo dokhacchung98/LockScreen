@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatA"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/eye"
+            app:backgroundTint="#138efd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/aa" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_text"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:text="enable/ disable lock screen"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/checkBoxOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:forceAspectRatio="false"
+                    app:switchBkgCheckedColor="@color/blue"
+                    app:switchBkgNotCheckedColor="@color/red"
+                    app:switchDesign="slim"
+                    app:switchToggleCheckedColor="@color/blue"
+                    app:switchToggleCheckedImage="@drawable/tick1"
+                    app:switchToggleNotCheckedColor="@color/red"
+                    app:switchToggleNotCheckedImage="@drawable/tick2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_text"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:text="turn on / off sound"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/checkBoxSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:forceAspectRatio="false"
+                    app:switchBkgCheckedColor="@color/blue"
+                    app:switchBkgNotCheckedColor="@color/red"
+                    app:switchDesign="slim"
+                    app:switchToggleCheckedColor="@color/blue"
+                    app:switchToggleCheckedImage="@drawable/sound1"
+                    app:switchToggleNotCheckedColor="@color/red"
+                    app:switchToggleNotCheckedImage="@drawable/sound2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_text"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:text="turn on / off vibrate"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/checkBoxVibratea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:forceAspectRatio="false"
+                    app:switchBkgCheckedColor="@color/blue"
+                    app:switchBkgNotCheckedColor="@color/red"
+                    app:switchDesign="slim"
+                    app:switchToggleCheckedColor="@color/blue"
+                    app:switchToggleCheckedImage="@drawable/vibrate"
+                    app:switchToggleNotCheckedColor="@color/red"
+                    app:switchToggleNotCheckedImage="@drawable/vibrate" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_text"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/btnPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/bad_script"
+                    android:text="Set password"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnBackgroundScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/bad_script"
+                    android:text="Set screen background"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnBackgroundPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/bad_script"
+                    android:text="Set password background"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btndefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/bad_script"
+                    android:text="Set default"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/bad_script"
+                    android:text="Exit"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

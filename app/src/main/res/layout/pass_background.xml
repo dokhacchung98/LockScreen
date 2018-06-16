@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:background="#324b57fc"
+        android:id="@+id/txt"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please wait 30 seconds"
+        android:padding="8dp"/>
+</LinearLayout>

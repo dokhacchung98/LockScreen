@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialog"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the password type"
+        android:textColor="@color/text"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="@color/text" />
+
+    <Button
+        android:id="@+id/btnPassNone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableRight="@drawable/no"
+        android:gravity="left|center"
+        android:text="No password"
+        android:textColor="@color/text" />
+
+
+    <Button
+        android:id="@+id/btnPassPat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableRight="@drawable/code"
+        android:gravity="left|center"
+        android:text="Picture password"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/btnPassCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableRight="@drawable/text"
+        android:gravity="left|center"
+        android:text="Password number"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/btnPassText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableRight="@drawable/patternt"
+        android:gravity="left|center"
+        android:text="Password words"
+        android:textColor="@color/text" />
+
+
+</LinearLayout>
